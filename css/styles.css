@@ -1,0 +1,201 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+/*     height: 100%; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/* end of reset css */
+
+
+
+.wrapper    {
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+/* header  */
+.header {
+    background-color: #020509;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header-flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 10px;
+}
+.header .logo{
+    font-size: 16px;
+    font-weight: 900;
+    color: #D4DDE1;
+    line-height: 26px;
+    letter-spacing: 8px;
+}
+.header-list{
+    display: flex;
+    column-gap: 40px;
+}
+.header >li, a{
+    color: #D4DDE1;    
+    text-decoration: none;
+    letter-spacing: 0.1em;
+
+}
+.word-main{
+    color: #FF0038;
+    font-weight: 500;    
+}
+
+/* main-box */
+.button{
+    background-color: #FFCE38;
+    border: 0;
+    padding: 25px 75px;
+    letter-spacing: 0.1em;
+    color: #020509;
+    cursor: pointer;
+}
+.header-two{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #020509;
+}
+.fish-text{
+    text-align: center;
+    color: #727272;
+    width: 540px;
+} 
+
+/* design */
+.design{
+    padding: 157px 0px 180px;
+}
+.design-box{
+    background: #fff;
+    width: 540px;
+}
+.design-box > h1{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    color: #020509;  
+    margin-bottom: 45px;
+}
+.design-box > p{
+    color: #727272;
+    margin-bottom: 45px;
+}
+/* about-me-box*/
+.about-me{
+    background: rgba(0, 207, 250, 0.05);
+    padding-bottom: 85px;
+    padding-top: 85px;
+    text-align: center;
+}
+.about-me-box{
+    margin: 0 auto;
+    width: 540px;
+}
+.about-me-box > h2{
+    margin-bottom: 65px;
+}
+
+/* projects-box */
+.projects{
+    background: #020509;
+    color: #fff;
+    line-height: 15px;
+    padding: 86px 0px;
+}
+.ul-flex-box{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-align: center;
+}
+.ul-flex-box img{
+    margin-bottom: 10px;
+}
+.fourty-word{
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* how do i work */
+.how-do-i-work{
+    background: rgba(0, 207, 250, 0.05);
+    text-align: center;
+    
+}
+.how-do-i-work-box{
+    width: 540px;
+    padding: 85px 0px;
+    margin: 0px auto;
+}
+.how-do-i-work > h2{
+    margin-top: 85px;
+    margin-bottom: 65px;
+    
+}
+.how-do-i-work > p{
+    margin-bottom: px;
+}
+.how-do-i-work .big-image{
+    margin-bottom: 70px;
+}
+.how-do-i-work .button{
+    margin-bottom: 70px;
+    align-self: center;
+}
+/* footer */
+.footer {
+    background-color: #020509;
+    color: #fff;
+    font-size: 18px;
+    padding: 37px 0px;
+}
+.footer-box{
+    text-align: center;
+}
