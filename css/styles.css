@@ -44,10 +44,6 @@ q:before, q:after {
 }
 /* end of reset css */
 
-
-
-.wrapper    {
-}
 .container{
     width: 1320px;
     margin: 0 auto;
