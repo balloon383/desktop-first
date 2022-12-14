@@ -43,9 +43,9 @@ q:before, q:after {
 	content: none;
 }
 /* end of reset css */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
 .container{
-    width: 1320px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -54,6 +54,7 @@ q:before, q:after {
     background-color: #020509;
     text-transform: uppercase;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 1s linear;
 }
 .header-flex-container{
     display: flex;
@@ -76,7 +77,29 @@ q:before, q:after {
     color: #D4DDE1;    
     text-decoration: none;
     letter-spacing: 0.1em;
+}
+@media screen and (max-width: 992px){
+	.header-list {
+	font-size: 12px;
+	}
+    .header .logo {
+        font-size: 12px;
+    }
+    .header-flex-container{
+        padding: 20px ;
+    }
 
+}
+@media screen and (max-width: 768px){
+	.header-list {
+	display: none;
+	}
+    .logo{
+        margin: 0 auto;
+    }
+    .header .logo{
+        font-size: 24px;
+    }
 }
 .word-main{
     color: #FF0038;
@@ -101,7 +124,7 @@ q:before, q:after {
 .fish-text{
     text-align: center;
     color: #727272;
-    width: 540px;
+    max-width: 540px;
 } 
 
 /* design */
@@ -110,7 +133,7 @@ q:before, q:after {
 }
 .design-box{
     background: #fff;
-    width: 540px;
+    max-width: 540px;
 }
 .design-box > h1{
     font-weight: 500;
@@ -123,6 +146,16 @@ q:before, q:after {
     color: #727272;
     margin-bottom: 45px;
 }
+@media screen and (max-width: 768px){
+    .design-box{
+        margin: 0 auto;
+    }
+    .design-box button{
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
 /* about-me-box*/
 .about-me{
     background: rgba(0, 207, 250, 0.05);
@@ -132,7 +165,7 @@ q:before, q:after {
 }
 .about-me-box{
     margin: 0 auto;
-    width: 540px;
+    max-width: 540px;
 }
 .about-me-box > h2{
     margin-bottom: 65px;
@@ -147,6 +180,7 @@ q:before, q:after {
 }
 .ul-flex-box{
     display: flex;
+    flex-flow: wrap;
     justify-content: space-between;
     text-transform: uppercase;
     text-align: center;
@@ -158,6 +192,23 @@ q:before, q:after {
     font-size: 24px;
     margin-right: 10px;
 }
+.ul-flex-box > li{
+    display: block;
+    flex: 1 1 16%;
+    transition: all 1s linear;
+}
+@media screen and (max-width: 992px){
+	.ul-flex-box > li {
+		flex: 1 1 30%;
+        padding: 20px 0px;
+	}
+}
+@media screen and (max-width: 768px){
+	.ul-flex-box > li {
+		flex: 1 1 50%;
+        padding: 25px 0px;
+	}
+}
 
 /* how do i work */
 .how-do-i-work{
@@ -166,7 +217,7 @@ q:before, q:after {
     
 }
 .how-do-i-work-box{
-    width: 540px;
+    max-width: 540px;
     padding: 85px 0px;
     margin: 0px auto;
 }
@@ -180,6 +231,7 @@ q:before, q:after {
 }
 .how-do-i-work .big-image{
     margin-bottom: 70px;
+    width: 100%;
 }
 .how-do-i-work .button{
     margin-bottom: 70px;
@@ -195,3 +247,4 @@ q:before, q:after {
 .footer-box{
     text-align: center;
 }
+
