@@ -54,13 +54,13 @@ q:before, q:after {
     background-color: #020509;
     text-transform: uppercase;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: all 1s linear;
 }
 .header-flex-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 35px 10px;
+    transition: all 1s linear;
 }
 .header .logo{
     font-size: 16px;
